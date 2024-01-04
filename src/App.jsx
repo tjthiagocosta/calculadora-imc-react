@@ -83,7 +83,7 @@ function App() {
             />
           </label>
           <button onClick={calculaImc}>Calcular</button>
-          <div className="render-imc">{imc ? renderImc() : null}</div>
+          <div className="render-imc">{!!imc && renderImc()}</div>
         </div>
       </div>
     </main>
